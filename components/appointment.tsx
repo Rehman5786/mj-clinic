@@ -219,7 +219,7 @@ export function Appointment() {
                       className="mr-3"
                     />
                     <div>
-                      <div className="font-medium">Specialized (₹150)</div>
+                      <div className="font-medium">Specialized (₹200)</div>
                       <div className="text-sm text-muted-foreground">
                         Complex cases
                       </div>
