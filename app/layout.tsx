@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { NewYearBanner } from "@/components/NewYearBanner"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -12,7 +13,13 @@ export const metadata: Metadata = {
   description:
     "Expert gynecological and obstetric care by Dr. Maimuna Tabassum at MJ Clinic, Yenamalakuduru, Vijayawada. Comprehensive women's health services with affordable consultation fees.",
   generator: "v0.app",
-  keywords: ["gynecologist vijayawada", "obstetrics", "women health", "MJ Clinic", "Dr. Maimuna Tabassum"],
+  keywords: [
+    "gynecologist vijayawada",
+    "obstetrics",
+    "women health",
+    "MJ Clinic",
+    "Dr. Maimuna Tabassum",
+  ],
   icons: {
     icon: [
       {
@@ -40,6 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+        <NewYearBanner />
         {children}
         <Analytics />
       </body>
